@@ -34,3 +34,20 @@ nav {
   width: 30px;
   height: 30px !;
 }
+.title{
+  font-size: 50px;
+  color: #590202;
+}
+p{
+  font-size: 20px;
+  color: #8C0303;
+}
+
+.imgheader{
+  background: url(./media/1329219.jpeg) no-repeat;
+  height: 150vh;
+  background-size: 100% 100%;
+  background-position: center;
+
+  
+}
