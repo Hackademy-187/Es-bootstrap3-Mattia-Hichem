@@ -11,7 +11,7 @@
 }
 /* ---------------------------------------------------------------------------- */
 body {
-  background-color: #828c5d;
+  background: linear-gradient(rgba(212, 216, 222, 1), rgba(140, 146, 154, 1));
   font-family: "ASSASSIN'S CREED", sans-serif;
 }
 nav {
@@ -81,6 +81,70 @@ p {
   -webkit-backdrop-filter: blur(7.9px);
   border: 3px solid rgba(130, 140, 93, 1);
 }
+
+.bgCard1 {
+  transition: 0.4s;
+  background-image: url(https://www.chromethemer.com/download/hd-wallpapers/assassins-creed-odyssey-3840x2160.jpg);
+  background-size: cover;
+  height: 405px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.bgCard2 {
+  transition: 0.4s;
+  background-image: url(https://i.ytimg.com/vi/qfgtqUmtv58/maxresdefault.jpg);
+  background-size: cover;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.bgCard3 {
+  transition: 0.4s;
+  background-image: url(https://w0.peakpx.com/wallpaper/92/831/HD-wallpaper-video-game-assassin-s-creed-rogue.jpg);
+  background-size: cover;
+  height: 200px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.bgCard1,
+.bgCard2,
+.bgCard3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.bgCard1::before,
+.bgCard2::before,
+.bgCard3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(23, 23, 23, 0.4), rgba(23, 23, 23, 0.8));
+  transition: opacity 0.9s ease;
+  z-index: 1;
+}
+
+.bgCard1:hover::before,
+.bgCard2:hover::before,
+.bgCard3:hover::before {
+  opacity: 0;
+}
+
+.logocard {
+  width: 35px;
+}
+
+.title-card {
+  color: black;
+  -webkit-text-stroke: 1px #590202;
+}
+
+.footer-custom {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @media (max-width: 500px) {
   .imgheader {
     background:
