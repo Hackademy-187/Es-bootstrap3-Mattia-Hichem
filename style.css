@@ -36,11 +36,13 @@ nav {
 }
 .title {
   font-size: 50px;
-  color: #590202;
+  color: #828c5d;
+  text-shadow: 1px 1px #590202;
 }
 p {
-  font-size: 20px;
-  color: #8c0303;
+  font-size: 24px;
+  color: 828c5d;
+  text-shadow: 1px 1px #828c5d;
 }
 
 .imgheader {
@@ -51,12 +53,33 @@ p {
   background-size: 100% 100%;
   background-position: center;
 }
-.carousel-inner {
-  height: 700px;
+.carousel {
+  width: 300px;
+  height: 400px;
 }
 .carousel-item img {
-  height: 700px;
+  width: 300px;
+  height: 400px;
   object-fit: cover;
+}
+.costum-background {
+  /* From https://css.glass */
+  background: rgba(242, 68, 5, 0.51);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+  border: 1px solid rgba(242, 68, 5, 1);
+}
+
+.costum-background:hover {
+  /* From https://css.glass */
+  background: rgba(242, 68, 5, 0.51);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0, 0, 0);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 3px solid rgba(130, 140, 93, 1);
 }
 @media (max-width: 500px) {
   .imgheader {
@@ -67,6 +90,22 @@ p {
     background-size: 600% 100%;
     background-position: center;
   }
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel .carousel-inner,
+  .carousel .carousel-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% 30%;
+  }
 }
 @media (min-width: 500px) and (max-width: 1000px) {
   .imgheader {
@@ -76,5 +115,21 @@ p {
     height: 150vh;
     background-size: 600% 100%;
     background-position: center;
+  }
+  .carousel {
+    width: 100%;
+    height: 20%;
+  }
+
+  .carousel .carousel-inner,
+  .carousel .carousel-item {
+    width: 100%;
+    height: 20%;
+  }
+
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% 30%;
   }
 }
