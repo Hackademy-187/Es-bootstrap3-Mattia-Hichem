@@ -34,20 +34,47 @@ nav {
   width: 30px;
   height: 30px !;
 }
-.title{
+.title {
   font-size: 50px;
   color: #590202;
 }
-p{
+p {
   font-size: 20px;
-  color: #8C0303;
+  color: #8c0303;
 }
 
-.imgheader{
-  background: url(./media/1329219.jpeg) no-repeat;
+.imgheader {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.116), rgba(207, 207, 207, 0.363)),
+    url(./media/1329219.jpeg) no-repeat;
   height: 150vh;
   background-size: 100% 100%;
   background-position: center;
-
-  
+}
+.carousel-inner {
+  height: 700px;
+}
+.carousel-item img {
+  height: 700px;
+  object-fit: cover;
+}
+@media (max-width: 500px) {
+  .imgheader {
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.11), rgba(207, 207, 207, 0.212)),
+      url(./media/1329219.jpeg) no-repeat;
+    height: 150vh;
+    background-size: 600% 100%;
+    background-position: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .imgheader {
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.199), rgba(207, 207, 207, 0.623)),
+      url(./media/1329219.jpeg) no-repeat;
+    height: 150vh;
+    background-size: 600% 100%;
+    background-position: center;
+  }
 }
