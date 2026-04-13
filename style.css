@@ -11,7 +11,7 @@
 }
 /* ---------------------------------------------------------------------------- */
 body {
-  background-color: #828c5d;
+  background: linear-gradient(rgba(212, 216, 222, 1),rgba(140, 146, 154, 1));
   font-family: "ASSASSIN'S CREED", sans-serif;
 }
 nav {
@@ -122,6 +122,10 @@ p {
   -webkit-text-stroke: 1px #590202; 
 }
 
+
+.footer-custom{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
