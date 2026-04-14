@@ -135,41 +135,82 @@
       <div class="row my-5 justify-content-center">
         <div class="col-6 col-lg-3">
           <h2 class="text-center border-4 border-bottom border-danger">
-            OTHER GAMES
+            TOP PLAYED GAMES
           </h2>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-3">
           <div class="bgCard1 d-flex align-items-center">
-            <h3 class="ps-4 title-card">
-              Assassin's Creed Odissey
-              <img class="logocard" src="./media/Logo.png" />
-            </h3>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn z-3 bg-transparent w-100 h-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            ></button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1
+                      class="modal-title fs-1 modal-title text-center"
+                      id="exampleModalLabel"
+                    >
+                      assassin's creed odyssey
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">...</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-12 col-lg-4 d-flex flex-column my-2 my-lg-0">
           <div class="col-12">
-            <div class="bgCard2 d-flex align-items-center">
-              <h3 class="ps-4 title-card">
-                Assassin's Creed Mirage
-                <img class="logocard" src="./media/Logo.png" />
-              </h3>
-            </div>
+            <div class="bgCard2 d-flex align-items-center"></div>
           </div>
           <div class="col-12">
-            <div class="bgCard3 d-flex align-items-center my-2 my-lg-0">
-              <h3 class="ps-4 title-card">
-                Assassin's Creed Rogue
-                <img class="logocard" src="./media/Logo.png" />
-              </h3>
-            </div>
+            <div class="bgCard3 d-flex align-items-center my-1 my-lg-0"></div>
           </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="bgCard4 d-flex text-center align-items-center my-1"></div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="bgCard5 d-flex text-center align-items-center my-2"></div>
         </div>
       </div>
     </div>
 
     <!-- article part end -->
+    <!-- MODAL start -->
 
     <!-- footer -->
     <footer class="py-3 mt-footer-custom border-top mt-5">
