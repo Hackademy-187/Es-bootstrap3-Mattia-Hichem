@@ -145,14 +145,14 @@ p {
   -webkit-text-stroke: 1px #590202;
 }
 
-a,
-.newsletter,
+
+/* .newsletter,
 .copyright,
 .footer-custom{
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: small !important;
   color: black;
-}
+} */
 
 @media (max-width: 500px) {
   .imgheader {
