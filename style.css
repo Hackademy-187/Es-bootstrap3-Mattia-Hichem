@@ -54,17 +54,21 @@ p {
   background-position: center;
 }
 .carousel {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
+  border: 1px solid rgba(242, 68, 5, 1);
+  border-radius: 16px 0px;
 }
 .carousel-item img {
   width: 300px;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
+  border: 1px solid rgba(242, 68, 5, 1);
+  border-radius: 16px 0px;
 }
 .costum-background {
   /* From https://css.glass */
-  background: rgba(242, 68, 5, 0.51);
+  background: rgba(242, 68, 5, 0.28);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.6px);
@@ -74,7 +78,7 @@ p {
 
 .costum-background:hover {
   /* From https://css.glass */
-  background: rgba(242, 68, 5, 0.51);
+  background: rgba(242, 68, 5, 0.28);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgb(0, 0, 0);
   backdrop-filter: blur(7.2px);
